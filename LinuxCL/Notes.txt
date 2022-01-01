@@ -1,0 +1,29 @@
+three of the "big ideas" embodied in Unix are:
+
+Programs do one thing and do it well.
+Programs work together.
+Programs use text streams as the universal interface.
+
+command [options] [arguments]
+man mkdir >> for help
+ls -al /etc --> all file in directort etc 
+Use wildcards: (*, )
+Suppose your current directory contains hundreds of image files, but you only want to see the PNG files—
+(ls *.png) or (ls *.jp*g) --> jpg and jpeg 
+The * wildcard matches on zero or more characters, but the ? wildcard represents a single character
+by an uppercase or lowercase J or P, you could enter this:
+ls *.[jpJP]*
+ls [a-zA-Z]* --> over the directory
+cat shows the content 
+Some Bash commands can only be run by the root user—a system administrator or superuser. If you try one of these commands without sufficient privileges, it fails. For example, only users logged in as a superuser can use cat to display the contents of /etc/at.deny:
+at.deny is a special file that determines who can use other Bash commands to submit jobs for later execution.
+
+sudo stands for "superuser do." When you use it, you're telling the shell that for this one command, you're acting with the root-user level of permission.
+
+The cp command copies not just files, but entire directories (and subdirectories) if you want. To make a copy of 0001.jpg named 0002.jpg,
+cp 0001.jpg 0002.jpg
+
+ps aux and ps -ef are the same. 
+Or suppose you want to filter the output to include only the lines that contain the word "daemon." One way to do that is by piping the output from ps to Linux's useful grep tool:
+ps -ef | grep daemon
+
