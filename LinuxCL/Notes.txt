@@ -27,3 +27,4 @@ ps aux and ps -ef are the same.
 Or suppose you want to filter the output to include only the lines that contain the word "daemon." One way to do that is by piping the output from ps to Linux's useful grep tool:
 ps -ef | grep daemon
 
+The nl filter has flags that allow you to change the increment value (-i), change the numbering format (ln, rn, rz), or change the starting number (-v).
