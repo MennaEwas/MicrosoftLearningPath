@@ -1,0 +1,5 @@
+1. Which of the following commands writes a list of processes associated with a user named scottgu to a file?
+2. Which of the following commands, called with the -r option, would you use to delete a subdirectory that isn't empty?
+3. Which of the following commands combines the contents of foo.txt and bar.txt into a new file named foobar.txt?
+4. The purpose of the sudo command is to:
+5. Which of the following statements is true about the command python3 app.py &?
