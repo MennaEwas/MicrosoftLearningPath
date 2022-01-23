@@ -28,3 +28,26 @@ Or suppose you want to filter the output to include only the lines that contain 
 ps -ef | grep daemon
 
 The nl filter has flags that allow you to change the increment value (-i), change the numbering format (ln, rn, rz), or change the starting number (-v).
+
+
+Stream_Editor
+he basic usage of sed is sed [options] commands [file-to-edit].
+
+For example, to use sed directly on the NASA-software-API.txt file, you would run the command as follows:
+sed '' NASA-software-API.txt
+
+Imagine that you have the URL https://www.nasa.gov/about/sites/index.html, and you want to replace index.html with home. You can make this replacement by using the following command: echo "https://www.nasa.gov/about/sites/index.html" | sed s'/index.html/home/'
+
+We can use the flag -n to suppress automatic printing and pass the option p to the replacement flag, like so: sed -n 's/NASA/National Aerospace Agency/p' NASA-software-API.txt
+
+Summary
+Some of the key takeaways from this module are:
+
+The cat command allows you to display, concatenate, and append files.
+Pipes (|) send the output of one command as input of another command.
+A filter takes input from one command, does some processing, and gives an output.
+Regular expressions (regex) are used for pattern matching and can be used by other commands and tools, such as sed and grep.
+The grep command can be used to find strings and values in a text file.
+Piping through grep is one of the most common uses.
+The most common use of the stream editor (sed) is text substitution.
+
